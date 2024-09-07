@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+.book-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.book {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.book img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+}
+
+.book:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.book-name {
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+#chapter-container {
+    margin-top: 30px;
+}
+
+.chapter {
+    background-color: #ff9800;
+    color: white;
+    padding: 10px;
+    margin: 5px auto;
+    border-radius: 5px;
+    width: 50%;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.chapter:hover {
+    background-color: #e68900;
+}
+
+
+
+
+ /* Notice animation for Hindi book */
+        #notice {
+            margin: 20px 0;
+            background-color: #ffcccb;
+            color: #b22222;
+            padding: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        @keyframes moveText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .moving-notice {
+            display: inline-block;
+            animation: moveText 10s linear infinite;
+        }
+
+
+  /* Footer styling */
+        footer {
+            margin-top: 50px;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: flex;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+        }
+
+        footer a {
+            color: #ff9800;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
